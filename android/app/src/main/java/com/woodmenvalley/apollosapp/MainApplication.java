@@ -1,4 +1,4 @@
-package com.differential.apollos;
+package com.woodmenvalley.apollosapp;
 
 import android.app.Application;
 import android.content.Context;

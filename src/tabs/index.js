@@ -79,11 +79,11 @@ const HomeTab = createFeatureFeedTab({
   feedName: 'HOME',
 });
 
-const ReadTab = createFeatureFeedTab({
+const ExploreTab = createFeatureFeedTab({
   options: {
     headerLeft: ProfileButton,
   },
-  tabName: 'Read',
+  tabName: 'Explore',
   feedName: 'READ',
 });
 
@@ -93,14 +93,6 @@ const WatchTab = createFeatureFeedTab({
   },
   tabName: 'Watch',
   feedName: 'WATCH',
-});
-
-const PrayTab = createFeatureFeedTab({
-  options: {
-    headerLeft: ProfileButton,
-  },
-  tabName: 'Pray',
-  feedName: 'PRAY',
 });
 
 const CustomConnectScreen = () => (
@@ -144,28 +136,23 @@ const TabNavigator = () => {
       <Screen
         name="Home"
         component={HomeTab}
-        options={{ tabBarIcon: tabBarIcon('home') }}
-      />
-      <Screen
-        name="Read"
-        component={ReadTab}
-        options={{ tabBarIcon: tabBarIcon('sections') }}
+        options={{ tabBarIcon: tabBarIcon('house') }}
       />
       <Screen
         name="Watch"
         component={WatchTab}
-        options={{ tabBarIcon: tabBarIcon('video') }}
+        options={{ tabBarIcon: tabBarIcon('watch') }}
       />
       <Screen
-        name="Pray"
-        component={PrayTab}
-        options={{ tabBarIcon: tabBarIcon('like') }}
+        name="Explore"
+        component={ExploreTab}
+        options={{ tabBarIcon: tabBarIcon('explore') }}
       />
       <Screen
         name="Connect"
         component={ConnectTabStackNavigator}
         options={{
-          tabBarIcon: tabBarIcon('profile'),
+          tabBarIcon: tabBarIcon('connect'),
         }}
       />
     </Navigator>

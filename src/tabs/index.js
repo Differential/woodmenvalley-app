@@ -23,7 +23,7 @@ import tabBarIcon from './tabBarIcon';
 
 const HeaderLogo = withTheme(({ theme }) => ({
   style: {
-    height: theme.sizing.baseUnit * 2.5,
+    height: theme.sizing.baseUnit,
     width: '70%',
     resizeMode: 'contain',
   },

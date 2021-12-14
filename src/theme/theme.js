@@ -52,6 +52,15 @@ const colors = {
  * }
  * ```
  */
+const buttons = () => ({
+  default: {
+    // Full Width Button Text
+    fill: '#ffffff',
+    // Hide Follow Request Button Text
+    accent: '#ffffff',
+  },
+});
+
 const overrides = {
   'ui-kit.Button.ButtonStyles': {
     backgroundColor: colors.secondary,
@@ -74,4 +83,4 @@ const overrides = {
   },
 };
 
-export default { colors, overrides };
+export default { buttons, colors, overrides };

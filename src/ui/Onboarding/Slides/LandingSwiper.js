@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useNavigation } from '@react-navigation/native';
 import { OnboardingSwiper } from '@apollosproject/ui-onboarding';
 import { named } from '@apollosproject/ui-kit';

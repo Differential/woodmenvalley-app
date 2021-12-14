@@ -52,6 +52,35 @@ const colors = {
  * }
  * ```
  */
-// const overrides = {};
+const buttons = () => ({
+  default: {
+    // Full Width Button Text
+    fill: '#ffffff',
+    // Hide Follow Request Button Text
+    accent: '#ffffff',
+  },
+});
 
-export default { colors };
+const overrides = {
+  'ui-kit.Button.ButtonStyles': {
+    backgroundColor: colors.secondary,
+    borderColor: colors.secondary,
+  },
+  'ui-onboarding.Features': {
+    description:
+      "We'd like to help you personalize your profile to make the most of your online experience.",
+  },
+  'ui-onboarding.LocationFinder': {
+    description:
+      "We'll use your location to connect you with your nearby campus and community.",
+  },
+  'ui-onboarding.AskNotifications': {
+    description:
+      "We'll let you know when important things are happening and keep you in the loop.",
+  },
+  'ui-onboarding.Follow': {
+    description: 'Follow others to stay up to date on your church community.',
+  },
+};
+
+export default { buttons, colors, overrides };

@@ -21,7 +21,7 @@ import {
 import Passes from '@apollosproject/ui-passes';
 import { MapViewConnected as Location } from '@apollosproject/ui-mapview';
 import Auth, { ProtectedRoute } from '@apollosproject/ui-auth';
-import { Landing, Onboarding } from '@apollosproject/ui-onboarding';
+import { Onboarding } from '@apollosproject/ui-onboarding';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 
 import {
@@ -31,6 +31,7 @@ import {
   UserSettingsConnected,
 } from '@apollosproject/ui-connected';
 import Providers from './Providers';
+import LandingSwiper from './ui/Onboarding/Slides/LandingSwiper';
 import Tabs from './tabs';
 import customTheme, { customIcons } from './theme';
 
@@ -77,7 +78,7 @@ const ThemedNavigationContainer = withTheme(({ theme, ...props }) => ({
 
 const LandingToAuth = () => {
   const navigation = useNavigation();
-  return <Landing onPressPrimary={() => navigation.navigate('Auth')} />;
+  return <LandingSwiper onPressPrimary={() => navigation.navigate('Auth')} />;
 };
 
 const { Navigator, Screen } = createNativeStackNavigator();

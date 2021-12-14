@@ -70,7 +70,7 @@ const Landing = () => {
           <PaddedView vertical={false}>
             <Button
               onPress={onPressPrimary}
-              title="Get started"
+              title="Let's go!"
               type="secondary"
               pill={false}
             />

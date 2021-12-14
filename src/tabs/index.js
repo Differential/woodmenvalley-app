@@ -18,7 +18,7 @@ import {
 } from '@apollosproject/ui-connected';
 import { checkOnboardingStatusAndNavigate } from '@apollosproject/ui-onboarding';
 import ActionTable from '../ui/ActionTable';
-import ActionBar from '../ui/ActionBar';
+// import ActionBar from '../ui/ActionBar';
 import tabBarIcon from './tabBarIcon';
 
 const HeaderLogo = withTheme(({ theme }) => ({
@@ -66,12 +66,30 @@ const SearchButton = () => {
   );
 };
 
+const WoodmenLightIcon = withTheme(({ theme }) => ({
+  name: 'wordmark-light',
+  size: theme.sizing.baseUnit * 2,
+}))(Icon);
+
+const WoodmenDarkIcon = withTheme(({ theme }) => ({
+  name: 'wordmark-dark',
+  size: theme.sizing.baseUnit * 2,
+}))(Icon);
+
+const WoodmenIcon = () => {
+  const theme = useTheme();
+  if (theme.type === 'light') {
+    return <WoodmenLightIcon />;
+  } else {
+    return <WoodmenDarkIcon />;
+  }
+};
+
 // we nest stack inside of tabs so we can use all the fancy native header features
 const HomeTab = createFeatureFeedTab({
   screenOptions: {
     headerHideShadow: true,
-    headerCenter: HeaderLogo,
-    headerRight: SearchButton,
+    headerCenter: WoodmenIcon,
     headerLeft: ProfileButton,
     headerLargeTitle: false,
   },
@@ -80,6 +98,9 @@ const HomeTab = createFeatureFeedTab({
 });
 
 const ExploreTab = createFeatureFeedTab({
+  screenOptions: {
+    headerRight: SearchButton,
+  },
   options: {
     headerLeft: ProfileButton,
   },

@@ -52,6 +52,11 @@ const colors = {
  * }
  * ```
  */
-// const overrides = {};
+const overrides = {
+  'ui-kit.Button.ButtonStyles': {
+    backgroundColor: colors.secondary,
+    borderColor: colors.secondary,
+  },
+};
 
-export default { colors };
+export default { colors, overrides };

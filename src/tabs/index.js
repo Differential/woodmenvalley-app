@@ -96,7 +96,7 @@ const WatchTab = createFeatureFeedTab({
 });
 
 const CustomConnectScreen = () => (
-  <ConnectScreenConnected ActionTable={ActionTable} ActionBar={ActionBar} />
+  <ConnectScreenConnected ActionTable={ActionTable} />
 );
 
 const ConnectTabStack = createNativeStackNavigator();

@@ -21,7 +21,7 @@ import {
 import Passes from '@apollosproject/ui-passes';
 import { MapViewConnected as Location } from '@apollosproject/ui-mapview';
 import Auth, { ProtectedRoute } from '@apollosproject/ui-auth';
-import { Landing, Onboarding } from '@apollosproject/ui-onboarding';
+import { Onboarding } from '@apollosproject/ui-onboarding';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 
 import {
@@ -33,6 +33,7 @@ import {
 import Providers from './Providers';
 import Tabs from './tabs';
 import customTheme, { customIcons } from './theme';
+import Landing from './onboarding/Landing';
 
 enableScreens(); // improves performance for react-navigation
 
@@ -74,11 +75,6 @@ const ThemedNavigationContainer = withTheme(({ theme, ...props }) => ({
 }))(({ containerRef, ...props }) => (
   <NavigationContainer ref={containerRef} {...props} />
 ));
-
-const LandingToAuth = () => {
-  const navigation = useNavigation();
-  return <Landing onPressPrimary={() => navigation.navigate('Auth')} />;
-};
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -148,7 +144,7 @@ const App = () => (
                 stackPresentation: 'push',
               }}
             />
-            <Screen name="LandingScreen" component={LandingToAuth} />
+            <Screen name="LandingScreen" component={Landing} />
             <Screen name="Search" component={SearchScreenConnected} />
             <Screen
               name="UserSettingsNavigator"

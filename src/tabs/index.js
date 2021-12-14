@@ -21,18 +21,6 @@ import ActionTable from '../ui/ActionTable';
 // import ActionBar from '../ui/ActionBar';
 import tabBarIcon from './tabBarIcon';
 
-const HeaderLogo = withTheme(({ theme }) => ({
-  style: {
-    height: theme.sizing.baseUnit,
-    width: '70%',
-    resizeMode: 'contain',
-  },
-  source:
-    theme.type === 'light'
-      ? require('./wordmark.png')
-      : require('./wordmark.dark.png'),
-}))(Image);
-
 const ProfileButton = () => {
   const navigation = useNavigation();
   return (

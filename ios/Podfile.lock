@@ -299,7 +299,7 @@ PODS:
   - React-jsinspector (0.66.1)
   - React-logger (0.66.1):
     - glog
-  - react-native-apollos-player (2.36.3):
+  - react-native-apollos-player (2.42.0):
     - React
   - react-native-config (0.11.7):
     - React
@@ -447,6 +447,8 @@ PODS:
     - Yoga
   - RNScreens (3.2.0):
     - React-Core
+  - RNSha256 (1.4.7):
+    - React
   - RNSVG (9.13.6):
     - React
   - Yoga (1.14.0)
@@ -540,6 +542,7 @@ DEPENDENCIES:
   - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - RNSha256 (from `../node_modules/react-native-sha256`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -683,6 +686,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSha256:
+    :path: "../node_modules/react-native-sha256"
   RNSVG:
     :path: "../node_modules/react-native-svg"
   Yoga:
@@ -726,7 +731,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: db2f6e22a534d466fc0e34e622df47d9d20bab2f
   React-jsinspector: 8c0517dee5e8c70cd6c3066f20213ff7ce54f176
   React-logger: bfddd3418dc1d45b77b822958f3e31422e2c179b
-  react-native-apollos-player: 4698aac1bcc99895f781e7701ca7364558abc5ca
+  react-native-apollos-player: 203c12c3dab62663563da3968fb9e6dfbbf04c5b
   react-native-config: 55548054279d92e0e4566ea15a8b9b81028ec342
   react-native-geolocation: c956aeb136625c23e0dce0467664af2c437888c9
   react-native-geolocation-service: 7c9436da6dfdecd9526c62eac62ea2bc3f0cc8ea
@@ -764,6 +769,7 @@ SPEC CHECKSUMS:
   RNPermissions: 5df468064df661a4c8c017e2791ce90d7695eea5
   RNReanimated: 65583befd5706cc9c86ae9a081786181ced37b93
   RNScreens: c277bfc4b5bb7c2fe977d19635df6f974f95dfd6
+  RNSha256: bf2c90a9e0cec6dcbcc4100e4e19715ae7feaa34
   RNSVG: 8ba35cbeb385a52fd960fd28db9d7d18b4c2974f
   Yoga: 2b4a01651f42a32f82e6cef3830a3ba48088237f
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Image, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from 'react-native-screens/native-stack';
@@ -17,9 +18,17 @@ import {
   ConnectScreenConnected,
 } from '@apollosproject/ui-connected';
 import { checkOnboardingStatusAndNavigate } from '@apollosproject/ui-onboarding';
-import ActionTable from '../ui/ActionTable';
-// import ActionBar from '../ui/ActionBar';
-import tabBarIcon from './tabBarIcon';
+
+const HeaderLogo = () => {
+  const theme = useTheme();
+  return (
+    <Icon
+      name="brand-icon"
+      size={theme.sizing.baseUnit * 1.5}
+      fill={theme.colors.primary}
+    />
+  );
+};
 
 const ProfileButton = () => {
   const navigation = useNavigation();
@@ -73,6 +82,16 @@ const WoodmenIcon = () => {
   }
 };
 
+const tabBarIcon = (name) => {
+  function TabBarIcon({ color }) {
+    return <Icon name={name} fill={color} size={24} />;
+  }
+  TabBarIcon.propTypes = {
+    color: PropTypes.string,
+  };
+  return TabBarIcon;
+};
+
 // we nest stack inside of tabs so we can use all the fancy native header features
 const HomeTab = createFeatureFeedTab({
   screenOptions: {
@@ -104,27 +123,13 @@ const WatchTab = createFeatureFeedTab({
   feedName: 'WATCH',
 });
 
-const CustomConnectScreen = () => (
-  <ConnectScreenConnected ActionTable={ActionTable} />
-);
-
-const ConnectTabStack = createNativeStackNavigator();
-const ConnectTabStackNavigator = () => (
-  <ConnectTabStack.Navigator
-    screenOptions={{
-      headerHideShadow: true,
-      headerLargeTitle: true,
-    }}
-  >
-    <ConnectTabStack.Screen
-      name={'Connect'}
-      component={CustomConnectScreen}
-      options={{
-        headerLeft: ProfileButton,
-      }}
-    />
-  </ConnectTabStack.Navigator>
-);
+const ConnectTab = createFeatureFeedTab({
+  options: {
+    headerLeft: ProfileButton,
+  },
+  tabName: 'Connect',
+  feedName: 'CONNECT',
+});
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -159,10 +164,8 @@ const TabNavigator = () => {
       />
       <Screen
         name="Connect"
-        component={ConnectTabStackNavigator}
-        options={{
-          tabBarIcon: tabBarIcon('connect'),
-        }}
+        component={ConnectTab}
+        options={{ tabBarIcon: tabBarIcon('connect') }}
       />
     </Navigator>
   );

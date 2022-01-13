@@ -76,11 +76,6 @@ const ThemedNavigationContainer = withTheme(({ theme, ...props }) => ({
   <NavigationContainer ref={containerRef} {...props} />
 ));
 
-const LandingToAuth = () => {
-  const navigation = useNavigation();
-  return <LandingSwiper onPressPrimary={() => navigation.navigate('Auth')} />;
-};
-
 const { Navigator, Screen } = createNativeStackNavigator();
 
 const App = () => (
@@ -149,7 +144,7 @@ const App = () => (
                 stackPresentation: 'push',
               }}
             />
-            <Screen name="LandingScreen" component={LandingToAuth} />
+            <Screen name="LandingScreen" component={LandingSwiper} />
             <Screen name="Search" component={SearchScreenConnected} />
             <Screen
               name="UserSettingsNavigator"

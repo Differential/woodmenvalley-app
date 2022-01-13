@@ -66,6 +66,13 @@ const overrides = {
     backgroundColor: colors.secondary,
     borderColor: colors.secondary,
   },
+  'ui-prayer.PrayerView.SecondaryActionButton': {
+    bordered: false,
+    style: {
+      backgroundColor: '#00000000',
+      borderColor: '#00000000',
+    },
+  },
   'ui-onboarding.Features': {
     description:
       "We'd like to help you personalize your profile to make the most of your online experience.",

@@ -1,1 +1,7 @@
-Template app for the Apollos Project
+Welcome to the official Woodmen Valley Chapel App.
+
+The Woodmen Valley Chapel App will keep you connected to Woodmen Valley while you're on the go! The app features both video and audio of our latest sermon series and sermon-based studies to help you go deeper with others after each week's message. It also keeps you informed of the latest stories, news, and events at Woodmen Valley. After you've enjoyed the content, you can share it with your friends via Twitter, Facebook, or email.
+
+For more information about Woodmen Valley, please visit www.woodmenvalley.org.
+
+The Woodmen Valley Chapel App was created with the Apollos Project.

@@ -16,7 +16,29 @@ const colors = {
 /* Base Typography sizing and fonts.
  * To control speicfic styles used on different type components (like H1, H2, etc), see "overrides"
  */
-// const typography = {};
+const typography = {
+  sans: {
+    regular: {
+      default: 'Montserrat',
+      italic: 'Montserrat-Italic',
+    },
+    medium: {
+      default: 'Montserrat-Medium',
+      italic: 'Montserrat-MediumItalic',
+    },
+    bold: {
+      default: 'Montserrat-Bold',
+      italic: 'Montserrat-BoldItalic',
+    },
+    black: {
+      default: 'Montserrat-Black',
+      italic: 'Montserrat-BlackItalic',
+    },
+  },
+  ui: {
+    regular: 'System',
+  },
+};
 
 /* Responsive breakpoints */
 // export const breakpoints = {};
@@ -90,4 +112,4 @@ const overrides = {
   },
 };
 
-export default { buttons, colors, overrides };
+export default { buttons, colors, overrides, typography };

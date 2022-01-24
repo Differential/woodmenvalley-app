@@ -9,13 +9,13 @@ import {
   ACCEPT_FOLLOW_REQUEST,
 } from '@apollosproject/ui-connected';
 import { checkOnboardingStatusAndNavigate } from '@apollosproject/ui-onboarding';
-// import ApollosConfig from '@apollosproject/config';
+import ApollosConfig from '@apollosproject/config';
 import { Amplitude } from '@amplitude/react-native';
 
 import ClientProvider, { client } from './client';
 
 const amplitude = Amplitude.getInstance();
-amplitude.init('a8690cd47b92611a0d0b60f3598ee14a');
+amplitude.init(ApollosConfig.AMPLITUDE_API_KEY);
 
 const AppProviders = ({ children }) => (
   <ClientProvider>

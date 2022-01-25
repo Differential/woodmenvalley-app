@@ -15,9 +15,11 @@ import { useApolloClient } from '@apollo/client';
 import {
   createFeatureFeedTab,
   UserAvatarConnected,
-  // ConnectScreenConnected,
+  ConnectScreenConnected,
 } from '@apollosproject/ui-connected';
 import { checkOnboardingStatusAndNavigate } from '@apollosproject/ui-onboarding';
+
+import ActionTable from './ui/ActionTable';
 
 // const HeaderLogo = () => {
 //   const theme = useTheme();
@@ -92,6 +94,10 @@ const tabBarIcon = (name) => {
   return TabBarIcon;
 };
 
+const CustomConnectScreen = () => (
+  <ConnectScreenConnected showAvatar={true} ActionTable={ActionTable} />
+);
+
 // we nest stack inside of tabs so we can use all the fancy native header features
 const HomeTab = createFeatureFeedTab({
   screenOptions: {
@@ -128,7 +134,7 @@ const ConnectTab = createFeatureFeedTab({
     headerLeft: ProfileButton,
   },
   tabName: 'Connect',
-  feedName: 'CONNECT',
+  TabComponent: CustomConnectScreen,
 });
 
 const { Navigator, Screen } = createBottomTabNavigator();

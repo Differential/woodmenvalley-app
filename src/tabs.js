@@ -113,25 +113,56 @@ const HomeTab = createFeatureFeedTab({
 const ExploreTab = createFeatureFeedTab({
   screenOptions: {
     headerRight: SearchButton,
+    headerLeft: ProfileButton,
   },
   options: {
-    headerLeft: ProfileButton,
+    headerTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
+    headerLargeTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
+    headerBackTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
   },
   tabName: 'Explore',
   feedName: 'READ',
 });
 
 const WatchTab = createFeatureFeedTab({
-  options: {
+  screenOptions: {
     headerLeft: ProfileButton,
+  },
+  options: {
+    headerTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
+    headerLargeTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
+    headerBackTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
   },
   tabName: 'Watch',
   feedName: 'WATCH',
 });
 
 const ConnectTab = createFeatureFeedTab({
-  options: {
+  screenOptions: {
     headerLeft: ProfileButton,
+  },
+  options: {
+    headerTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
+    headerLargeTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
+    headerBackTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
   },
   tabName: 'Connect',
   TabComponent: CustomConnectScreen,

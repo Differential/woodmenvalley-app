@@ -1,4 +1,5 @@
-export BrandIcon from './BrandIcon';
+export BrandIconDark from './BrandIconDark';
+export BrandIconLight from './BrandIconLight';
 export CaretRight from './CaretRight';
 export Connect from './Connect';
 export Explore from './Explore';

@@ -1,21 +1,25 @@
 import { memo } from 'react';
 import PropTypes from 'prop-types';
 import { named } from '@apollosproject/ui-kit';
+import { useTheme } from '@react-navigation/native';
 
 import { Slide } from '@apollosproject/ui-onboarding';
 import SlideContent from '../SlideContent';
 
 const Landing = memo(
-  ({ firstName, description, BackgroundComponent, ...props }) => (
-    <Slide {...props}>
-      {BackgroundComponent}
-      <SlideContent
-        icon="brand-icon"
-        title={'Welcome to Church!'}
-        description={description}
-      />
-    </Slide>
-  )
+  ({ firstName, description, BackgroundComponent, ...props }) => {
+    const source = useTheme();
+    return (
+      <Slide {...props}>
+        {BackgroundComponent}
+        <SlideContent
+          icon={source.dark ? 'brand-icon-dark' : 'brand-icon-light'}
+          title={'Welcome to Church!'}
+          description={description}
+        />
+      </Slide>
+    );
+  }
 );
 
 Landing.displayName = 'Landing';

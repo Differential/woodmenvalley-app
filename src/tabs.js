@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Image, View } from 'react-native';
+import { View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { createNativeStackNavigator } from 'react-native-screens/native-stack';
+// import { createNativeStackNavigator } from 'react-native-screens/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {
   NavigationService,
@@ -15,20 +15,20 @@ import { useApolloClient } from '@apollo/client';
 import {
   createFeatureFeedTab,
   UserAvatarConnected,
-  ConnectScreenConnected,
+  // ConnectScreenConnected,
 } from '@apollosproject/ui-connected';
 import { checkOnboardingStatusAndNavigate } from '@apollosproject/ui-onboarding';
 
-const HeaderLogo = () => {
-  const theme = useTheme();
-  return (
-    <Icon
-      name="brand-icon"
-      size={theme.sizing.baseUnit * 1.5}
-      fill={theme.colors.primary}
-    />
-  );
-};
+// const HeaderLogo = () => {
+//   const theme = useTheme();
+//   return (
+//     <Icon
+//       name="brand-icon"
+//       size={theme.sizing.baseUnit * 1.5}
+//       fill={theme.colors.primary}
+//     />
+//   );
+// };
 
 const ProfileButton = () => {
   const navigation = useNavigation();

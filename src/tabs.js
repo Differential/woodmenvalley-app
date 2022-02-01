@@ -100,11 +100,22 @@ const CustomConnectScreen = () => (
 
 // we nest stack inside of tabs so we can use all the fancy native header features
 const HomeTab = createFeatureFeedTab({
-  screenOptions: {
+  options: {
     headerHideShadow: true,
     headerCenter: WoodmenIcon,
     headerLeft: ProfileButton,
     headerLargeTitle: false,
+  },
+  screenOptions: {
+    headerTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
+    headerLargeTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
+    headerBackTitleStyle: {
+      fontFamily: 'Montserrat-Black',
+    },
   },
   tabName: 'Home',
   feedName: 'HOME',
@@ -114,8 +125,6 @@ const ExploreTab = createFeatureFeedTab({
   screenOptions: {
     headerRight: SearchButton,
     headerLeft: ProfileButton,
-  },
-  options: {
     headerTitleStyle: {
       fontFamily: 'Montserrat-Black',
     },
@@ -133,8 +142,6 @@ const ExploreTab = createFeatureFeedTab({
 const WatchTab = createFeatureFeedTab({
   screenOptions: {
     headerLeft: ProfileButton,
-  },
-  options: {
     headerTitleStyle: {
       fontFamily: 'Montserrat-Black',
     },

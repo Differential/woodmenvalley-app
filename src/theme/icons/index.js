@@ -3,6 +3,7 @@ export BrandIconLight from './BrandIconLight';
 export CaretRight from './CaretRight';
 export Connect from './Connect';
 export Explore from './Explore';
+export HandsHeart from './HandsHeart';
 export House from './House';
 export Read from './Read';
 export Watch from './Watch';

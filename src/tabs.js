@@ -122,9 +122,11 @@ const HomeTab = createFeatureFeedTab({
 });
 
 const ExploreTab = createFeatureFeedTab({
-  screenOptions: {
+  options: {
     headerRight: SearchButton,
     headerLeft: ProfileButton,
+  },
+  screenOptions: {
     headerTitleStyle: {
       fontFamily: 'Montserrat-Black',
     },
@@ -140,8 +142,10 @@ const ExploreTab = createFeatureFeedTab({
 });
 
 const WatchTab = createFeatureFeedTab({
-  screenOptions: {
+  options: {
     headerLeft: ProfileButton,
+  },
+  screenOptions: {
     headerTitleStyle: {
       fontFamily: 'Montserrat-Black',
     },

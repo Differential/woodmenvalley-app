@@ -42,7 +42,9 @@ const ActionTable = () => {
           </RowHeader>
           <TableView>
             <Touchable
-              onPress={() => openUrl('https://woodmenvalley.org/connect')}
+              onPress={() =>
+                openUrl('https://app.woodmenvalley.org/connect?Theme=MobileApp')
+              }
             >
               <Cell>
                 <CellText>Connect with us</CellText>
@@ -54,7 +56,9 @@ const ActionTable = () => {
             </Touchable>
             <Divider />
             <Touchable
-              onPress={() => openUrl('https://woodmenvalley.org/24hop')}
+              onPress={() =>
+                openUrl('https://app.woodmenvalley.org/prayer?Theme=MobileApp')
+              }
             >
               <Cell>
                 <CellText>I need prayer</CellText>
@@ -66,7 +70,9 @@ const ActionTable = () => {
             </Touchable>
             <Divider />
             <Touchable
-              onPress={() => openUrl('https://woodmenvalley.org/baptism')}
+              onPress={() =>
+                openUrl('https://app.woodmenvalley.org/baptism?Theme=MobileApp')
+              }
             >
               <Cell>
                 <CellText>Get baptized</CellText>
@@ -78,7 +84,9 @@ const ActionTable = () => {
             </Touchable>
             <Divider />
             <Touchable
-              onPress={() => openUrl('https://woodmenvalley.org/care')}
+              onPress={() =>
+                openUrl('https://app.woodmenvalley.org/care?Theme=MobileApp')
+              }
             >
               <Cell>
                 <CellText>Get care</CellText>
@@ -90,7 +98,11 @@ const ActionTable = () => {
             </Touchable>
             <Divider />
             <Touchable
-              onPress={() => openUrl('https://woodmenvalley.org/campuses')}
+              onPress={() =>
+                openUrl(
+                  'https://app.woodmenvalley.org/campuses?Theme=MobileApp'
+                )
+              }
             >
               <Cell>
                 <CellText>Our locations</CellText>

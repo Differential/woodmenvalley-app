@@ -76,11 +76,28 @@ const WoodmenDarkIcon = withTheme(({ theme }) => ({
 }))(Icon);
 
 const WoodmenIcon = () => {
+  const navigation = useNavigation();
   const theme = useTheme();
   if (theme.type === 'light') {
-    return <WoodmenLightIcon />;
+    return (
+      <Touchable
+        onPress={() => {
+          navigation.navigate('Home');
+        }}
+      >
+        <WoodmenLightIcon />
+      </Touchable>
+    );
   } else {
-    return <WoodmenDarkIcon />;
+    return (
+      <Touchable
+        onPress={() => {
+          navigation.navigate('Home');
+        }}
+      >
+        <WoodmenDarkIcon />
+      </Touchable>
+    );
   }
 };
 

@@ -124,6 +124,7 @@ const HomeTab = createFeatureFeedTab({
 const ExploreTab = createFeatureFeedTab({
   options: {
     headerRight: SearchButton,
+    headerCenter: WoodmenIcon,
     headerLeft: ProfileButton,
   },
   screenOptions: {
@@ -143,6 +144,7 @@ const ExploreTab = createFeatureFeedTab({
 
 const WatchTab = createFeatureFeedTab({
   options: {
+    headerCenter: WoodmenIcon,
     headerLeft: ProfileButton,
   },
   screenOptions: {
@@ -162,6 +164,7 @@ const WatchTab = createFeatureFeedTab({
 
 const ConnectTab = createFeatureFeedTab({
   screenOptions: {
+    headerCenter: WoodmenIcon,
     headerLeft: ProfileButton,
   },
   options: {

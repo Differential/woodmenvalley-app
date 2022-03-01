@@ -28,6 +28,15 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
+        <intent-filter android:autoVerify="true">
+          <action android:name="android.intent.action.VIEW" />
+          <category android:name="android.intent.category.DEFAULT" />
+          <category android:name="android.intent.category.BROWSABLE" />
+          <data android:scheme="https"
+                android:host="woodmen.production.apollos.app"
+                android:pathPrefix="/app-link" />
+          <data android:scheme="http" />
+        </intent-filter>
       </activity>
 
       <meta-data android:name="com.bugsnag.android.API_KEY" android:value="6b5312dbdd0b2cd48a8bf525e67cbee5" />

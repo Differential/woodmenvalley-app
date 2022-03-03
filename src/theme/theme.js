@@ -110,6 +110,9 @@ const overrides = {
   'ui-onboarding.Follow': {
     description: 'Follow others to stay up to date on your church community.',
   },
+  'ui-kit.ActionBar.ActionBarItem.ActionBarItem': (theme) => ({
+    tint: theme.colors.text.secondary,
+  }),
 };
 
 export default { buttons, colors, overrides, typography };

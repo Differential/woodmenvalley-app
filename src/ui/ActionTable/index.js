@@ -42,9 +42,7 @@ const ActionTable = () => {
           </RowHeader>
           <TableView>
             <Touchable
-              onPress={() =>
-                openUrl('https://app.woodmenvalley.org/connect?Theme=MobileApp')
-              }
+              onPress={() => openUrl('https://app.woodmenvalley.org/page/3763')}
             >
               <Cell>
                 <CellText>Connect with us</CellText>

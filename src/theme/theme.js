@@ -113,6 +113,9 @@ const overrides = {
   'ui-kit.ActionBar.ActionBarItem.ActionBarItem': (theme) => ({
     tint: theme.colors.text.secondary,
   }),
+  'ui-kit.ContentTitles': {
+    onPressShare: () => null,
+  },
 };
 
 export default { buttons, colors, overrides, typography };

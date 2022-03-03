@@ -1,3 +1,5 @@
+import RockAuthedWebBrowser from '@apollosproject/ui-connected';
+
 /* Add your custom theme definitions below. Anything that is supported in UI-Kit Theme can be
  overridden and/or customized here! */
 
@@ -115,6 +117,14 @@ const overrides = {
   }),
   'ui-kit.ContentTitles': {
     onPressShare: () => null,
+  },
+  'ui-kit.Button': {
+    onPress: ({ action }) =>
+      RockAuthedWebBrowser.open(
+        action.relatedNode?.url,
+        {},
+        { useRockToken: true }
+      ),
   },
 };
 

@@ -116,6 +116,9 @@ const overrides = {
   'ui-kit.ContentTitles': {
     onPressShare: () => null,
   },
+  'ui-connected.RockAuthedWebBrowser': (theme) => ({
+    primary: theme.colors.text.secondary,
+  }),
 };
 
 export default { buttons, colors, overrides, typography };

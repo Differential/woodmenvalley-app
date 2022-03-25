@@ -81,6 +81,10 @@ const buttons = () => ({
     // Hide Follow Request Button Text
     accent: '#ffffff',
   },
+  // Make select campus text show.
+  secondary: {
+    accent: '#ffffff',
+  },
 });
 
 const overrides = {

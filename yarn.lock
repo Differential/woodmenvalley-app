@@ -95,9 +95,9 @@
     yup "^0.27.0"
 
 "@apollosproject/ui-connected@v2":
-  version "2.46.1"
-  resolved "https://registry.yarnpkg.com/@apollosproject/ui-connected/-/ui-connected-2.46.1.tgz#8d64022e85ff2a3ee613c1bc314f4c03ba90335d"
-  integrity sha512-/U4SjfgccK9ifsFGVs1Fq8ng3M8yEOuC58yxEtO42ijiGQ35BFsj5k813tZf5z1BKj2a4ptEQIRebDx3TnZzYA==
+  version "2.47.2"
+  resolved "https://registry.yarnpkg.com/@apollosproject/ui-connected/-/ui-connected-2.47.2.tgz#5c2a4d7a0d87dc1894103334e21c2a4090e1d819"
+  integrity sha512-StYPs4j8TsOJHlUiHrMXQdSqf2Q4Se0Zs8wdhHkf7v7EWGBmR0iQGOjo6TN63H1D8vo+fvAPZsFG+zw1oeGjdA==
   dependencies:
     "@gorhom/bottom-sheet" "3.4.1"
     apollo-upload-client "^17.0.0"
@@ -7073,10 +7073,15 @@ moment@2.22.2:
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
   integrity sha1-PCV/mDn8DpP/UxSWMiOeuQeD/2Y=
 
-moment@^2.24.0, moment@^2.29.1:
+moment@^2.24.0:
   version "2.29.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
+
+moment@^2.29.1:
+  version "2.29.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.2.tgz#00910c60b20843bcba52d37d58c628b47b1f20e4"
+  integrity sha512-UgzG4rvxYpN15jgCmVJwac49h9ly9NurikMWGPdVxm8GZD6XjkKPxDTjQQ43gtGgnV3X0cAyWDdP2Wexoquifg==
 
 ms@2.0.0:
   version "2.0.0"

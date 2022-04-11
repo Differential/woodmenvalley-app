@@ -50,7 +50,7 @@
     "@apollosproject/ui-fragments": "v2",
     "@apollosproject/ui-htmlview": "v2",
     "@apollosproject/ui-kit": "^3.0.3-canary.5",
-    "@apollosproject/ui-mapview": "v2",
+    "@apollosproject/ui-mapview": "^3.3.1-canary.0",
     "@apollosproject/ui-media-player": "^3.0.2",
     "@apollosproject/ui-notifications": "v2",
     "@apollosproject/ui-onboarding": "v2",

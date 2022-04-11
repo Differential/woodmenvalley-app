@@ -141,10 +141,10 @@
     recompose "^0.30.0"
     rn-placeholder "1.2.0"
 
-"@apollosproject/ui-mapview@v2":
-  version "2.46.1"
-  resolved "https://registry.yarnpkg.com/@apollosproject/ui-mapview/-/ui-mapview-2.46.1.tgz#31deb5732e9cb468b31d5e5c208ca1db0e22d686"
-  integrity sha512-ov5vJ/Wo33XaO1gOVRmERkGGC8qD9QpnLkGa6a9A6Y+1gGbaLuyw/eMSXI0eTvfGsDUovaGD2Lm0o5slPQB5vA==
+"@apollosproject/ui-mapview@^3.3.1-canary.0":
+  version "3.3.1-canary.0"
+  resolved "https://registry.yarnpkg.com/@apollosproject/ui-mapview/-/ui-mapview-3.3.1-canary.0.tgz#13f2274b70313af0a95d75760539c7a0889d3e6b"
+  integrity sha512-EIx5FrrvRRQEMkKaAqIuena9TiP5Nhp6th5CUItR/9+2jWCFk9Ryn5tLfhhJ4FgcYB7xLoRv+x0XYT6JQnfUfA==
   dependencies:
     "@apollo/client" "3.3.20"
 

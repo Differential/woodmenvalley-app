@@ -94,10 +94,6 @@ const tabBarIcon = (name) => {
   return TabBarIcon;
 };
 
-const CustomConnectScreen = () => (
-  <ConnectScreenConnected showAvatar={true} ActionTable={ActionTable} />
-);
-
 // we nest stack inside of tabs so we can use all the fancy native header features
 const HomeTab = createFeatureFeedTab({
   options: {
@@ -179,7 +175,7 @@ const ConnectTab = createFeatureFeedTab({
     },
   },
   tabName: 'Connect',
-  TabComponent: CustomConnectScreen,
+  feedName: 'CONNECT',
 });
 
 const { Navigator, Screen } = createBottomTabNavigator();

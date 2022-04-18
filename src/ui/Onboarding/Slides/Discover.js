@@ -12,7 +12,7 @@ const StyledSlideContent = styled({
 const Discover = memo(({ firstName, description, ...props }) => (
   <Slide {...props}>
     <StyledSlideContent
-      title={'Watch, read, and discover.'}
+      title={'Watch, read, and discover'}
       description={description}
     />
   </Slide>

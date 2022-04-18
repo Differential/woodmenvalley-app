@@ -11,7 +11,7 @@ const StyledSlideContent = styled({
 
 const Pray = memo(({ firstName, description, ...props }) => (
   <Slide {...props}>
-    <StyledSlideContent title={'Pray with others.'} description={description} />
+    <StyledSlideContent title={'Pray with others'} description={description} />
   </Slide>
 ));
 
@@ -31,7 +31,7 @@ Pray.propTypes = {
 };
 
 Pray.defaultProps = {
-  description: 'Share & encourage others in a meaningful habit.',
+  description: 'Share prayer requests and lift others in prayer in real-time.',
 };
 
 export default named('ui-onboarding.Pray')(Pray);

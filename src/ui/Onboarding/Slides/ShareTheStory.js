@@ -9,15 +9,15 @@ const StyledSlideContent = styled({
   height: '100%',
 })(SlideContent);
 
-const Community = memo(({ firstName, description, ...props }) => (
+const ShareTheStory = memo(({ firstName, description, ...props }) => (
   <Slide {...props}>
-    <StyledSlideContent title={'Be in community.'} description={description} />
+    <StyledSlideContent title={'Share the story'} description={description} />
   </Slide>
 ));
 
-Community.displayName = 'Community';
+ShareTheStory.displayName = 'ShareTheStory';
 
-Community.propTypes = {
+ShareTheStory.propTypes = {
   /* The `Swiper` component used in `<onBoarding>` looks for and hijacks the title prop of it's
    * children. Thus we have to use more unique name.
    */
@@ -30,8 +30,9 @@ Community.propTypes = {
    */
 };
 
-Community.defaultProps = {
-  description: 'Be known, grow and live life with people.',
+ShareTheStory.defaultProps = {
+  description:
+    'Check back often to find fresh stories on how God is working through the people of Woodmen.',
 };
 
-export default named('ui-onboarding.Community')(Community);
+export default named('ui-onboarding.ShareTheStory')(ShareTheStory);

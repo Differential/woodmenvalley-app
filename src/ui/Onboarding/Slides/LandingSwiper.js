@@ -5,12 +5,12 @@ import { named } from '@apollosproject/ui-kit';
 import Landing from './Landing';
 import Scripture from './Scripture';
 import Pray from './Pray';
-import Community from './Community';
+import ShareTheStory from './ShareTheStory';
 import Discover from './Discover';
 
 function LandingSwiper() {
   const navigation = useNavigation();
-  const slides = [Landing, Scripture, Pray, Community, Discover];
+  const slides = [Landing, Scripture, Pray, ShareTheStory, Discover];
 
   return (
     <OnboardingSwiper

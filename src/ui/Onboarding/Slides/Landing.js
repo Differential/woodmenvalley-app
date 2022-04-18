@@ -43,7 +43,7 @@ Landing.propTypes = {
 
 Landing.defaultProps = {
   description:
-    "We're Excited To Start This Journey To Overflow Our City With Kindness.",
+    "We're excited that you're here. Join us on the journey to love well and change lives through Christ.",
 };
 
 export default named('ui-onboarding.Landing')(Landing);

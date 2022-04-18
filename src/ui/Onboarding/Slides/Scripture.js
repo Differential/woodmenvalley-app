@@ -11,10 +11,7 @@ const StyledSlideContent = styled({
 
 const Scripture = memo(({ firstName, description, ...props }) => (
   <Slide {...props}>
-    <StyledSlideContent
-      title={'Grow in scripture.'}
-      description={description}
-    />
+    <StyledSlideContent title={'Grow in scripture'} description={description} />
   </Slide>
 ));
 
@@ -34,7 +31,8 @@ Scripture.propTypes = {
 };
 
 Scripture.defaultProps = {
-  description: 'Journal & reflect with others reading scripture.',
+  description:
+    "Join with others to dig deeper into God's Word through daily reading plans.",
 };
 
 export default named('ui-onboarding.Scripture')(Scripture);

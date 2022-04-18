@@ -109,7 +109,7 @@ const overrides = {
   },
   'ui-onboarding.AskNotifications': {
     description:
-      "We'll let you know when important things are happening and keep you in the loop.",
+      "We'll let you know when important things are happening and keep you in the loop. We won't hit you up more than once a month.",
   },
   'ui-onboarding.Follow': {
     description: 'Follow others to stay up to date on your church community.',

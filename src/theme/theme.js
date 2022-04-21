@@ -123,6 +123,10 @@ const overrides = {
   'ui-connected.RockAuthedWebBrowser': (theme) => ({
     primary: theme.colors.text.secondary,
   }),
+  // Hides the Series Progression Button on Content Items
+  'ui-connected.UpNextButtonConnected.UpNextButton': {
+    display: 'none',
+  },
 };
 
 export default { buttons, colors, overrides, typography };

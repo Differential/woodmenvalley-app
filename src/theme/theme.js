@@ -123,6 +123,9 @@ const overrides = {
   'ui-connected.RockAuthedWebBrowser': (theme) => ({
     primary: theme.colors.text.secondary,
   }),
+  'ui-kit.FeatureTitles.Container': {
+    flexShrink: 1,
+  },
 };
 
 export default { buttons, colors, overrides, typography };

@@ -1,1 +1,8 @@
+Welcome to the official Woodmen Valley Chapel application for mobile devices. 
 
+Check out all kinds of content that interests you. After you’ve downloaded and enjoyed the content, you can share it with your friends via Twitter, Facebook or email.
+
+For more information about Woodmen Valley Chapel, please visit:
+http://www.woodmenvalley.org
+
+The Woodmen Valley Chapel app was developed with the Apollos Project Platform.

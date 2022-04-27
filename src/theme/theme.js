@@ -120,6 +120,9 @@ const overrides = {
   'ui-kit.ContentTitles': {
     onPressShare: () => null,
   },
+  'ui-connected.ScriptureFeature': {
+    showShareButton: false,
+  },
   'ui-connected.RockAuthedWebBrowser': (theme) => ({
     primary: theme.colors.text.secondary,
   }),

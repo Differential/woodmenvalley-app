@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 // import { createNativeStackNavigator } from 'react-native-screens/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -50,6 +50,12 @@ const ProfileButton = () => {
 const SearchButton = () => {
   const navigation = useNavigation();
   const theme = useTheme();
+
+  // Hide the search button on Android until we can figure out why you can't tap on it
+  if (Platform.OS === 'android') {
+    return null;
+  }
+
   return (
     <Touchable
       onPress={() => {

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Platform, View } from 'react-native';
+import { View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 // import { createNativeStackNavigator } from 'react-native-screens/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -18,8 +18,6 @@ import {
   ConnectScreenConnected,
 } from '@apollosproject/ui-connected';
 import { checkOnboardingStatusAndNavigate } from '@apollosproject/ui-onboarding';
-
-import ActionTable from './ui/ActionTable';
 
 // const HeaderLogo = () => {
 //   const theme = useTheme();
@@ -51,22 +49,19 @@ const SearchButton = () => {
   const navigation = useNavigation();
   const theme = useTheme();
 
-  // Hide the search button on Android until we can figure out why you can't tap on it
-  if (Platform.OS === 'android') {
-    return null;
-  }
-
   return (
     <Touchable
       onPress={() => {
         navigation.navigate('Search');
       }}
     >
-      <Icon
-        name="search"
-        size={theme.sizing.baseUnit * 2}
-        fill={theme.colors.primary}
-      />
+      <View>
+        <Icon
+          name="search"
+          size={theme.sizing.baseUnit * 2}
+          fill={theme.colors.primary}
+        />
+      </View>
     </Touchable>
   );
 };

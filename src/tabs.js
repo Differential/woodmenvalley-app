@@ -155,7 +155,7 @@ const WatchTab = createFeatureFeedTab({
       fontFamily: 'Montserrat-Black',
     },
   },
-  tabName: 'Watch',
+  tabName: 'Media',
   feedName: 'WATCH',
 });
 
@@ -201,7 +201,7 @@ const TabNavigator = () => {
         options={{ tabBarIcon: tabBarIcon('house') }}
       />
       <Screen
-        name="Watch"
+        name="Media"
         component={WatchTab}
         options={{ tabBarIcon: tabBarIcon('watch') }}
       />
